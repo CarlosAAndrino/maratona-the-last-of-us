@@ -5,7 +5,7 @@ botoesCarrossel.forEach((botao, indice) => {
     botao.addEventListener('click', () => {
         desativarBotaoSelecionado();
         selecionarBotaoCarrossel(botao);
-        esconterImagemAtiva();
+        esconderImagemAtiva();
         mostrarImagemDeFundo(indice);
     })  
 })
@@ -18,7 +18,7 @@ function mostrarImagemDeFundo(indice) {
     imagens[indice].classList.add('ativa');
 }
 
-function esconterImagemAtiva() {
+function esconderImagemAtiva() {
     const imagemAtiva = document.querySelector('.ativa');
     imagemAtiva.classList.remove('ativa');
 }
